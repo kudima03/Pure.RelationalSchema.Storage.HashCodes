@@ -6,4 +6,12 @@
     <IsTrimmable>true</IsTrimmable>
     <PublishAot>true</PublishAot>
   </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Pure.RelationalSchema.Storage.HashCodes</PackageId>
+    <RootNamespace>Pure.RelationalSchema.Storage.HashCodes</RootNamespace>
+    <AssemblyName>Pure.RelationalSchema.Storage.HashCodes</AssemblyName>
+    <Authors>Dmitry Kurochkin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/kudima03/Pure.RelationalSchema.Storage.HashCodes</PackageProjectUrl>
+  </PropertyGroup>
 </Project>
