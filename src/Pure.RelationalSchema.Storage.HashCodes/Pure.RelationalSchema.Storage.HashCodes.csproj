@@ -4,5 +4,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsTrimmable>true</IsTrimmable>
+    <PublishAot>true</PublishAot>
   </PropertyGroup>
 </Project>
