@@ -25,11 +25,11 @@ public sealed record RowHashTests
             ),
             new KeyValuePair<IColumn, ICell>(
                 new Column.Column(new String("Column3"), new DateTimeColumnType()),
-                new Cell(new String(new DateTime(2021, 7, 15, 14, 30, 0).ToString()))
+                new Cell(new String("15.07.2021 14:30:00"))
             ),
             new KeyValuePair<IColumn, ICell>(
                 new Column.Column(new String("Column4"), new DateColumnType()),
-                new Cell(new String(new DateTime(2021, 7, 15, 14, 30, 0).Date.ToString()))
+                new Cell(new String("15.07.2021"))
             ),
         ];
 
@@ -67,11 +67,11 @@ public sealed record RowHashTests
             ),
             new KeyValuePair<IColumn, ICell>(
                 new Column.Column(new String("Column3"), new DateTimeColumnType()),
-                new Cell(new String(new DateTime(2021, 7, 15, 14, 30, 0).ToString()))
+                new Cell(new String("15.07.2021 14:30:00"))
             ),
             new KeyValuePair<IColumn, ICell>(
                 new Column.Column(new String("Column4"), new DateColumnType()),
-                new Cell(new String(new DateTime(2021, 7, 15, 14, 30, 0).Date.ToString()))
+                new Cell(new String("15.07.2021"))
             ),
         ];
 
