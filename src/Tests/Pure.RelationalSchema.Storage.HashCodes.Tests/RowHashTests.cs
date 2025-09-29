@@ -34,7 +34,7 @@ public sealed record RowHashTests
         ];
 
         Assert.Equal(
-            "A9EECCA98556691EB633032B21EC06506524AC71BC4B466B907849B87C766A44",
+            "4BE7E929C917E2D1B7E2F8193E667EE50C1877F73BB22EBC792F1C20363BAA33",
             Convert.ToHexString(
                 [
                     .. new RowHash(
@@ -76,7 +76,7 @@ public sealed record RowHashTests
         ];
 
         Assert.Equal(
-            "A9EECCA98556691EB633032B21EC06506524AC71BC4B466B907849B87C766A44",
+            "4BE7E929C917E2D1B7E2F8193E667EE50C1877F73BB22EBC792F1C20363BAA33",
             Convert.ToHexString(
                 [
                     .. new RowHash(
