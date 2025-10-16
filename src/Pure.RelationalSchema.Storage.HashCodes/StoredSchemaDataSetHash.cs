@@ -37,17 +37,17 @@ public sealed record StoredSchemaDataSetHash : IDeterminedHash
     public IEnumerator<byte> GetEnumerator()
     {
         return new DeterminedHash(
-            TypePrefix.Concat(
-                new DeterminedHash(
-                    _storedSchemaDataset.TablesDatasets.Select(
-                        dataset => new DeterminedHash(
-                            new TableHash(dataset.Key).Concat(
-                                new StoredTableDataSetHash(dataset.Value)
+            TypePrefix
+                .Concat(new SchemaHash(_storedSchemaDataset.Schema))
+                .Concat(
+                    new DeterminedHash(
+                        _storedSchemaDataset.Select(pair => new DeterminedHash(
+                            new TableHash(pair.Key).Concat(
+                                new StoredTableDataSetHash(pair.Value)
                             )
-                        )
+                        ))
                     )
                 )
-            )
         ).GetEnumerator();
     }
 
