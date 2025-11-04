@@ -1,5 +1,6 @@
 using System.Collections;
 using Pure.HashCodes;
+using Pure.HashCodes.Abstractions;
 using Pure.RelationalSchema.HashCodes;
 using Pure.RelationalSchema.Storage.Abstractions;
 
