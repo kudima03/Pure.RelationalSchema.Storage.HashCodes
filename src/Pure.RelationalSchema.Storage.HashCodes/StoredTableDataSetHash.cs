@@ -41,7 +41,9 @@ public sealed record StoredTableDataSetHash : IDeterminedHash
             TypePrefix
                 .Concat(new TableHash(_storedTableDataset.TableSchema))
                 .Concat(
-                    new DeterminedHash(_storedTableDataset.Select(x => new RowHash(x)))
+                    new DeterminedHash(
+                        _storedTableDataset.AsEnumerable().Select(x => new RowHash(x))
+                    )
                 )
         ).GetEnumerator();
     }
