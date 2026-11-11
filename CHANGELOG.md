@@ -6,6 +6,15 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ---
 
+## [0.1.0-preview.2.3.0] — 2026-11-11
+
+### Added
+- Multi-targeting: the package now also builds for `net11.0`.
+
+### Changed
+- Updated `Pure.RelationalSchema.HashCodes` to 3.4.0 and
+  `Pure.RelationalSchema.Storage.Abstractions` to 0.1.0-preview.4.2.0.
+
 ## [0.1.0-preview.2.2.0] — 2026-05-20
 
 - Maintenance release: dependency and build updates.
